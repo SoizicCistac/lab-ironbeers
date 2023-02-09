@@ -1,7 +1,9 @@
 <div id="beers">
     {{#each beers}}
-        <a href="/beers/beer{{this.id}}">
+    <div id="beer">
+         <a href="/beers/beer{{this.id}}">
         {{> beerPartials this}}
         </a>
+    </div>   
     {{/each}}
 </div>

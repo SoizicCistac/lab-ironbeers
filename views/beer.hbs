@@ -1,18 +1,5 @@
 <div id="oneBeer">
-    <img src={{beer.0.image_url}} alt="beer image">
-    <div id="info">
-        <h3>{{beer.0.name}}</h3>
-        <p id="tagline">{{beer.0.tagline}}</p>
-        <p id="description">{{beer.0.description}}</p>
-        <h4>Food Pairing</h4>
-        <ul>
-            {{#each beer.0.food_pairing}}
-            <li>
-                {{this}}
-            </li>
-            {{/each}}
-        </ul>
-    
-        <p id="brewer"><span>Brewers Tips: </span>{{beer.0.brewers_tips}}</p>
-    </div>  
+    {{#each beer}}
+        {{> beerPartials}}
+    {{/each}}
 </div>

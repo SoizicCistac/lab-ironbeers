@@ -47,7 +47,7 @@ nav {
     height: 3rem;
 }
 
-#beerImg{
+#beerIndex{
     display: flex;
     height: 400px;
     margin: auto;
@@ -75,10 +75,25 @@ nav {
     margin: 2.5rem;
 }
 
+#beers #beer #info h4,
+#beers #beer #info ul,
+#beers #beer #info #brewer {
+    display: none;
+}
+
 #beer {
     flex-direction: row;
+    align-items: center;
     width: 25%;
     margin: 2rem;
+}
+
+#beerImg {
+    display: flex;
+    width: auto;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 1rem;
 }
 
 #beer a,
@@ -87,19 +102,26 @@ nav {
     color: black;
 }
 
-#beerImg {
-    width: auto;
-    height: 300px;
+#tagline {
+    color: var(--grey);
+    margin-bottom: 1rem;
 }
 
-#oneBeer {
+#description {
+    margin-bottom: 1rem;
+}
+
+#oneBeer,
+#random-beer {
     display: flex;
 }
 
-#oneBeer img {
+#oneBeer #beerImg,
+#random-beer #beerImg {
     width: auto;
-    height: 200px;
+    height: 400px;
     margin: auto;
+    margin-top: 3rem;
 }
 
 #info {
@@ -109,16 +131,6 @@ nav {
 
 #info h3 {
     margin: 2rem 0rem;
-}
-
-#tagline {
-    color: var(--grey);
-    margin-bottom: 1rem;
-}
-
-#description,
-#info h4 {
-    margin-bottom: 1rem;
 }
 
 #info ul li {
@@ -131,4 +143,14 @@ nav {
 
 #brewer {
     margin-top: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
 }
